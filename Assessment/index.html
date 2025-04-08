@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>navbar with dropdown</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- navigation bar container -->
+    <div class="navbar">
+      <!-- logo section -->
+      <div class="logo">
+        <label>mylogo</label>
+      </div>
+
+      <!-- menu section -->
+      <div class="nav-links">
+        <!-- each menu item -->
+        <div class="nav-item">
+          <label>home</label>
+        </div>
+
+        <div class="nav-item">
+          <label>about</label>
+        </div>
+
+        <!-- dropdown item -->
+        <div class="nav-item dropdown">
+          <label>services</label>
+
+          <!-- dropdown content -->
+          <div class="dropdown-content">
+            <label>Web design</label>
+            <label>Marketing</label>
+            <label>WordPress</label>
+            <div class="sub-dropdown">
+              <a href="#" class="sub-dropdown-toggle">More</a>
+              <div class="sub-dropdown-content">
+                <a href="" class="sub-dropdown-item">HTML</a>
+                <a href="" class="sub-dropdown-item">CSS</a>
+                <a href="" class="sub-dropdown-item">JavaScript</a>
+                <a href="" class="sub-dropdown-item">jQuery</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <label>contact</label>
+          <a href="#" class="login-btn">Login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
