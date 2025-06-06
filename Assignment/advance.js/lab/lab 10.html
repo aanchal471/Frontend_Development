@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Paragraph with JavaScript</title>
+</head>
+<body>
+  <h2>Paragraph Update Example</h2>
+
+  <!-- Paragraph -->
+  <p id="myParagraph">Hello, World!</p>
+
+  <!-- Button to trigger changes -->
+  <button onclick="changeTextAndColor()">Click to Change Text & Color</button>
+
+  <script>
+    function changeTextAndColor() {
+      const paragraph = document.getElementById("myParagraph");
+      paragraph.textContent = "JavaScript is fun!";
+      paragraph.style.color = "blue";
+    }
+  </script>
+</body>
+</html>

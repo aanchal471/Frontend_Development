@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Function</title>
+</head>
+<body>
+  <button onclick="runAll()">Run All Functions</button>
+
+  <script>
+    // 1. greetUser function
+    function greetUser(name) {
+      console.log("Hello, " + name + "!");
+    }
+
+    // 2. calculateSum function
+    function calculateSum(num1, num2) {
+      return num1 + num2;
+    }
+
+    // 3. do-while loop to get number > 10
+    function askNumberGreaterThanTen() {
+      let number;
+      do {
+        number = parseFloat(prompt("Enter a number greater than 10:"));
+      } while (isNaN(number) || number <= 10);
+      console.log("You entered:", number);
+    }
+
+    // Run all functions together
+    function runAll() {
+      // Greet user
+      const userName = prompt("Enter your name:");
+      greetUser(userName);
+
+      // Calculate sum
+      const num1 = parseFloat(prompt("Enter first number to add:"));
+      const num2 = parseFloat(prompt("Enter second number to add:"));
+      const sum = calculateSum(num1, num2);
+      console.log("Sum:", sum);
+
+      // Ask for number > 10
+      askNumberGreaterThanTen();
+    }
+  </script>
+</body>
+</html>

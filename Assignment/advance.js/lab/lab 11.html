@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>setTimeout & setInterval</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      transition: background-color 1s ease;
+    }
+
+    #clock {
+      font-size: 2em;
+      margin-top: 30px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <h2>Digital Clock</h2>
+  <div id="clock">Loading time...</div>
+
+  <script>
+    // Task 1: Change background color after 5 seconds
+    setTimeout(() => {
+      document.body.style.backgroundColor = "#c2e9fb"; // Light blue
+    }, 5000);
+
+    // Task 2: Digital Clock using setInterval
+    function updateClock() {
+      const now = new Date();
+      let hours = now.getHours().toString().padStart(2, '0');
+      let minutes = now.getMinutes().toString().padStart(2, '0');
+      let seconds = now.getSeconds().toString().padStart(2, '0');
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      document.getElementById("clock").textContent = timeString;
+    }
+
+    // Start clock immediately and then update every second
+    updateClock();
+    setInterval(updateClock, 1000);
+
+  </script>
+</body>
+</html>

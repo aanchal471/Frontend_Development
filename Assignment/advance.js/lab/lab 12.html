@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error handling</title>
+</head>
+<body>
+  
+  <script>
+
+       // Function to divide two numbers
+function divide(a, b) {
+  try {
+    // Check if the denominator is zero
+    if (b === 0) {
+      // Manually throw an error
+      throw new Error("Cannot divide by zero.");
+    }
+
+    // Perform division if denominator is not zero
+    let result = a / b;
+    console.log(`Result: ${result}`);
+  } catch (error) {
+    // Handle the error
+    console.error("Error occurred:", error.message);
+  }
+}
+
+// Test the function with division by zero
+let numerator = 50;
+let denominator = 0;
+
+divide(numerator, denominator);
+
+
+  </script>
+</body>
+</html>

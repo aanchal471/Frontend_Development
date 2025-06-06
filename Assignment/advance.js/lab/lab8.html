@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Object Task</title>
+</head>
+<body>
+  
+  <button onclick="runCarTask()">Run Car Object</button>
+
+  <script>
+    function runCarTask() {
+      // Create the car object
+      let car = {
+        brand: "Toyota",
+        model: "Corolla",
+        year: 2020
+      };
+
+      // Access and print brand and model
+      console.log("Brand:", car.brand);
+      console.log("Model:", car.model);
+
+      // Update year
+      car.year = 2025;
+
+      // Add new property 'color'
+      car.color = "Red";
+
+      // Log the updated car object
+      console.log("Updated Car Object:", car);
+    }
+  </script>
+</body>
+</html>
