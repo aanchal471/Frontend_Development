@@ -1,0 +1,34 @@
+
+.contact-form {
+    background-color: rgb(185, 183, 14);
+    padding: 10px;
+    border: 5px solid #ccc;
+    width: 360px;
+}
+#contactform {
+    margin: 0 auto;
+    width: 100%;
+}
+.form-field {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.submit-btn {
+    background-color:  rgb(76, 235, 37);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #113812;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.Header {
+    background-color: #f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+}
+
+.topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.column {
+     width: 33.33%;
+     padding: 15px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mrdia screen and (max-width:600px;) {
+    .column.side , column.middle{
+        width: 100px;
+    }
+}
+
+.footer {
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+}
+
